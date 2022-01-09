@@ -9,7 +9,7 @@ def show_popup(request):
         new_obj = models.Dropdown(value=new_percentage)
         new_obj.save()
         percentages = reversed(models.Dropdown.objects.all())
-        print(percentages)
+        #print(percentages)
         return render(request,'home.html',{'percentages':percentages})
     percentages = models.Dropdown.objects.all()
     return render(request,'home.html',{'percentages':percentages})
