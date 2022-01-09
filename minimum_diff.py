@@ -12,4 +12,4 @@ for i in range(len(speed_array)-1):
         print((speed_array[i],speed_array[i+1],min_diff))
         break
 
-#time complexity - o(n)
+#time complexity - o(nlogn)
